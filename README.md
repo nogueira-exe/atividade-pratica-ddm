@@ -14,3 +14,14 @@ Este é um aplicativo simples desenvolvido com **Expo** e **NativeWind**, com o 
 ```bash
 git clone https://github.com/nogueira-exe/atividade-pratica-ddm
 cd atividade-ddm
+
+```
+2. Instale as dependências:
+```bash
+npm install
+
+```
+3. Inicie o projeto com Expo:
+```bash
+npx expo start
+```
