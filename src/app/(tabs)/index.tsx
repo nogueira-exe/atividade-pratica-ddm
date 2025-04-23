@@ -1,29 +1,35 @@
-import { View, Text, ScrollView, Image } from 'react-native'
+import { View, Text, ScrollView, Image, SafeAreaView } from 'react-native'
 import React from 'react'
-import Constants from 'expo-constants'
 import { Ionicons } from '@expo/vector-icons';
 import Header from '../components/header';
-import Categoria from '../components/categorias';
+import Categoria from '../categorias';
 import Section from '../components/section';
 import { router } from 'expo-router';
+import Produtos from '../produtos';
 
 export default function index() {
 
-    const statusBarHeight = Constants.statusBarHeight
     const notificationCount = 3
 
     return (
-        <ScrollView className='flex-1 mx-4'>
-            <View style={{ marginTop: statusBarHeight }}>
+        <SafeAreaView className='flex-1 mx-5'>
+            <View>
                 <Header />
 
                 <Section
                     title='Categorias'
                     label='Veja mais'
-                    onPress={() => router.push('/categorias')}
+                    onPress={() => router.push('/categoria')}
                 />
                 <Categoria />
+
+                <Section
+                    title='Produtos'
+                    label='Veja Mais'
+                    onPress={() => router.push('/produtos')}
+                />
+                <Produtos/>
             </View>
-        </ScrollView>
+        </SafeAreaView>
     )
 }

@@ -1,7 +1,7 @@
-import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native'
+import { View, Text, FlatList, TouchableOpacity, Image, SafeAreaView } from 'react-native'
 import React from 'react'
 import { router, useLocalSearchParams } from 'expo-router'
-import { data } from './../../../../data/index';
+import { data } from '@/data';
 import Constants from 'expo-constants';
 
 export default function CategoriaDetalhe() {
@@ -13,13 +13,14 @@ export default function CategoriaDetalhe() {
     const produtosFiltrados = produtos.filter((produto) => produto.idCategory === Number(id));
 
   return (
-    <View style={{ marginTop: statusBarHeight}} className='flex items-center justify-center gap-2'>
-        <Text className='text-2xl font-bold'>Produtos de {id}</Text>
+    <SafeAreaView style={{ marginTop: statusBarHeight}} className='flex items-center justify-center gap-2'>
+        <Text className='text-2xl font-bold'>{id}</Text>
 
         <FlatList
             data={produtosFiltrados}
             keyExtractor={(item) => item.id.toString()}
             numColumns={2}
+            showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
                 <TouchableOpacity 
                     className='bg-slate-200 m-4 w-48 h-52 rounded-xl'
@@ -34,6 +35,6 @@ export default function CategoriaDetalhe() {
                 </TouchableOpacity>
             )}
         />
-    </View>
+    </SafeAreaView>
   )
 }

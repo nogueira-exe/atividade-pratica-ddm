@@ -1,6 +1,6 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import { data } from '../../../../data/index';
+import { data } from '@/data';
 import CategoriaCard from './categoria-card';
 import { useRouter } from 'expo-router'
 
@@ -20,7 +20,7 @@ export default function Categoria() {
           <CategoriaCard
             title={item.title}
             cover={item.cover}
-            onPress={() => router.push({ pathname: '/components/categorias/[id]', params: { id: item.id.toLocaleString() } })}
+            onPress={() => router.push({ pathname: '/categorias/[id]', params: { id: item.id.toLocaleString() } })}
           />
         )}
         showsHorizontalScrollIndicator={false}

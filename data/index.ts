@@ -24,8 +24,8 @@ export const data: Data = {
     },
     {
         id: 4,
-        title: 'Informática',
-        cover: 'https://s3-alpha-sig.figma.com/img/15b7/a3e8/6dc441d536c192c1bd846e0b78273aab?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=f3~01Q-nrOLDnwx~7xlaWZee18V64bi8901-q~yGBgWnj0YROwyrYMPWp8liU5R9i0SMcqNPjQ7KkX1Hda30-f65QVcOB87~f5HrsZ6G-ynadRmFF1Q3eTrqt~KqVenAFKTXtsjAV8oBNn3qpTOIF6wK64iHcHOb2RLrbPe1hzfEr-QzX3~LlSbIo53kRJKBAylZb3wnynbVQ0-zrilbUbIxc8WY1UegCx-gBG4jSBH2wncjARe5J2Pub4Mu1tKJUa4dqL7tnKJxYOe5~eQUJWyvdMN-yL9C32MyyH8Og0tIWNjBQzWVCbOJBvJ~RMLgNAziiLNC-TAZI7MxxE5AUw__'
+        title: 'Hardware',
+        cover: 'https://www.pexels.com/pt-br/foto/placa-mae-preta-e-cinza-2582937/'
       }
   ],
   products: [
